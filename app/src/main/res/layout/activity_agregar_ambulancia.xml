@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/view_main"
+        android:layout_width="389dp"
+        android:layout_height="715dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621">
+
+
+
+        <TextView
+            android:id="@+id/view_titulo_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AGREGAR AMBULANCIA"
+            android:textAlignment="center"
+            android:textColor="#E91E63"
+            android:textSize="32sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/txt_codigo_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondeados"
+            android:hint="Codigo ambulancia"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <EditText
+            android:id="@+id/txt_calle_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondeados"
+            android:hint="Ubicacion ambulancia (calle)"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/txt_carrera_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondeados"
+            android:hint="Ubicacion ambulancia (carrera)"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/txt_estado_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondeados"
+            android:hint="Estado de la ambulancia"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bn_ingresar_accidentado_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/botones_redondeados"
+            android:text="Ingresar Accidentado"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/desocupar_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondeados"
+            android:textSize="20sp"
+            android:text="Desocupar ambulancia" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bn_agregar_ambu_ambulancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondeados"
+            android:textSize="20sp"
+            android:text="Agregar ambulancia"/>
+
+        <ImageView
+            android:id="@+id/view_volver_mostrar"
+            android:layout_width="50dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/flecha_volver"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

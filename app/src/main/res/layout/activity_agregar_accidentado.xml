@@ -23,62 +23,75 @@
             android:id="@+id/view_titulo_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="URGENCIAS +"
-            android:textSize="48sp"
+            android:text="AGREGAR ACCIDENTADO"
+            android:textAlignment="center"
             android:textColor="#E91E63"
-            android:textAlignment="center"/>
+            android:textSize="30sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bn_ambulancia_main"
+        <EditText
+            android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondeados"
-            android:text="Agregar Ambulancia"
-            />
+            android:background="@drawable/objetos_redondos"
+            android:hint="Nombre del accidentado"
+            android:textSize="20sp"
+            android:textAlignment="center" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bn_hospital_main"
+        <EditText
+            android:id="@+id/calle_hospital"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondeados"
-            android:text="Agregar Hospital" />
+            android:background="@drawable/objetos_redondos"
+            android:hint="Ubicación del accidentado (calle)"
+            android:textSize="20sp"
+            android:textAlignment="center" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bn_lista_hospitales_main"
+        <EditText
+            android:id="@+id/carrera_hospital"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondeados"
-            android:text="Motrar lista de hospitales" />
+            android:background="@drawable/objetos_redondos"
+            android:hint="Ubicación del accidentado (carrera)"
+            android:textSize="20sp"
+            android:textAlignment="center" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bn_lista_accidentados_main"
+        <EditText
+            android:id="@+id/accidente1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondeados"
-            android:text="Mostrar lista de accidentados" />
+            android:textSize="20sp"
+            android:background="@drawable/objetos_redondos"
+            android:hint="Tipo de accidente"
+            android:textAlignment="center" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+        <ImageView
+            android:id="@+id/view_volver_mostrar"
+            android:layout_width="50dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/flecha_volver"
+            tools:ignore="VectorDrawableCompat" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bn_lista_ambulancias_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondeados"
-            android:text="Mostrar lista de ambulancias" />
     </LinearLayout>
 
 
